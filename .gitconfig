@@ -1,0 +1,10 @@
+[user]
+	name = SakaiTaka23
+	email = tt3.sakai@gmail.com
+[ghq]
+	root = /Users/fumi/Downloads
+[init]
+	defaultBranch = main
+[alias]
+	co = checkout
+	dl = ! git branch -d `git branch --merged | grep -v '^*\\|main\\|master'`
