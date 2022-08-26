@@ -30,6 +30,7 @@ sh brew/install_brew.sh
   
   - https://gist.github.com/Revod/3f3115f8d4b90fc986fd4b61441c2567
   - https://github.com/Arc0re/Iceberg-iTerm2/blob/master/iceberg.itermcolors
+  - https://github.com/dracula/iterm/blob/master/Dracula.itermcolors
 
 
 ## VSCode
@@ -52,6 +53,12 @@ sh code/install_extensions.sh
 #263238,#2e3a40,#80CBC4,#FFFFFF,#13191C,#ffffff,#50fa7b,#FF5555,#2e3a40,#ffffff
 ```
 
+- Dracula
+
+```
+#282A36,#44475A,#44475A,#8BE9FD,#6272A4,#FFFFFF,#50FA7B,#FF5555
+```
+
 - Blue
 
 ```
@@ -66,6 +73,16 @@ sh code/install_extensions.sh
 brew bundle dump
 ```
 
+## code
+```shell
+code --list-extensions > extensions
+```
+
+## iterm
+- updated automatically
+  - **set Preference -> General -> Preference -> Save changes to Automatically**
+
 ## dotfiles
 
-- update install_prezto.sh
+- all of them are in symbolic links
+

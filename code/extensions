@@ -1,5 +1,6 @@
 christian-kohler.path-intellisense
 dbaeumer.vscode-eslint
+dracula-theme.theme-dracula
 dsznajder.es7-react-js-snippets
 ecmel.vscode-html-css
 Equinusocio.vsc-material-theme
@@ -26,6 +27,7 @@ PKief.material-icon-theme
 Prisma.prisma
 redhat.vscode-yaml
 streetsidesoftware.code-spell-checker
+usernamehw.errorlens
 yzhang.markdown-all-in-one
 Zignd.html-css-class-completion
 zxh404.vscode-proto3
