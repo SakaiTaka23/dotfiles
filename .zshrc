@@ -49,6 +49,9 @@ alias tree='tree -a -I "\.git|node_modules|.next|.dist"'
 
 # Programming
 
+# asdf
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
 # npm
 export PATH="$HOME/.yarn/bin:$PATH"
 
@@ -67,9 +70,8 @@ alias de='docker exec -it $(docker ps | peco | cut -d " " -f 1) /bin/bash'
 alias des='docker exec -it $(docker ps | peco | cut -d " " -f 1) /bin/sh'
 
 # Go
-export GOPATH=$HOME/go
+export GOPATH=$(go env GOPATH)
 export PATH=$PATH:$GOPATH/bin
-export GOBIN=$HOME/go/bin
 
 # lazygit
 alias lg='lazygit'

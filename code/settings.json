@@ -49,8 +49,11 @@
   "workbench.editorAssociations": {
     "*.ipynb": "vscode.markdown.preview.editor"
   },
-  "workbench.colorTheme": "Material Theme",
+  "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#44475a"
+  },
   // ===========================
   // Language Specified Settings
   // ===========================
@@ -78,7 +81,8 @@
   // ===================
   // Extensions Settings
   // ===================
-  "cSpell.userWords": ["gofiber", "gorm"],
+  "cSpell.userWords": ["gofiber", "gorm", "usecase"],
+  "errorLens.excludeBySource": ["cSpell"],
   "eslint.run": "onSave",
   "eslint.packageManager": "yarn",
   "eslint.format.enable": true,
@@ -90,5 +94,6 @@
     "handler": "Controller",
     "handlers": "Controller"
   },
-  "redhat.telemetry.enabled": true
+  "redhat.telemetry.enabled": true,
+  "editor.stickyScroll.enabled": true
 }
