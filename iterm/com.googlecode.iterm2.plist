@@ -2221,7 +2221,7 @@
 			<key>Name</key>
 			<string>Material</string>
 			<key>Non Ascii Font</key>
-			<string>RictyDiminished-Regular 12</string>
+			<string>Menlo-Regular 11</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
