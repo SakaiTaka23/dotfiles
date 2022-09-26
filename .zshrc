@@ -38,7 +38,9 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 
-setopt AUTO_CD 
+setopt AUTO_CD
+setopt NO_BEEP
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=250"
 
 # fzf
 export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 
