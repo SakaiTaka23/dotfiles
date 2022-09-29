@@ -9,7 +9,7 @@
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.fontFamily": "Ricty Diminished",
-  "editor.fontSize": 14,
+  "editor.fontSize": 15,
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
   "editor.parameterHints.enabled": false,

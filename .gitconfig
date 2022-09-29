@@ -8,3 +8,5 @@
 [alias]
 	co = checkout
 	dl = ! git branch -d `git branch --merged | grep -v '^*\\|main\\|master'`
+[core]
+	pager = less -F -X
