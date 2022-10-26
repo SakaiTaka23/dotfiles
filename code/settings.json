@@ -81,7 +81,7 @@
   // ===================
   // Extensions Settings
   // ===================
-  "cSpell.userWords": ["gofiber", "gorm", "usecase"],
+  "cSpell.userWords": ["gofiber", "gorm", "interactor", "usecase"],
   "errorLens.excludeBySource": ["cSpell"],
   "eslint.run": "onSave",
   "eslint.packageManager": "yarn",
@@ -90,6 +90,8 @@
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true,
   "prettier.printWidth": 120,
+  "plantuml.server": "https://www.plantuml.com/plantuml",
+  "plantuml.render": "PlantUMLServer",
   "material-icon-theme.folders.associations": {
     "handler": "Controller",
     "handlers": "Controller"

@@ -2,22 +2,8 @@
 
 # Setup
 
-## Mac
-
 ```shell
-sh mac/setup.sh
-```
-
-## prezto
-
-```shell
-sh prezto/install_prezto.sh
-```
-
-## brew
-
-```shell
-sh brew/install_brew.sh
+sh scripts/init.sh
 ```
 
 ## iterm
@@ -32,16 +18,42 @@ sh brew/install_brew.sh
   - https://github.com/Arc0re/Iceberg-iTerm2/blob/master/iceberg.itermcolors
   - https://github.com/dracula/iterm/blob/master/Dracula.itermcolors
 
+## Manual install
 
-## VSCode
+## font RictyDiminished
+https://github.com/edihbrandon/RictyDiminished
 
-- install code command from preferences
+## app store
+- LINE
+- Twitter
 
-```shell
-sh code/install_extensions.sh
-```
+## Chrome extensions
+- backup manually
 
-- copy settings.json
+## Languages
+- install from asdf
+
+## Go
+- air
+- protoc-gen-go, grpc, validate
+- wire
+
+## Yarn
+- nestcli
+- trashcli
+- tsc
+- tsserver
+
+## MarkText
+- change key bindings
+https://note.com/note_fumi/n/n5c7879340087
+
+## Keyboard
+- razer macos
+https://github.com/1kc/razer-macos
+
+## Printer
+Cannon IJ Scan Utility Lite
 
 ## Other
 

@@ -68,7 +68,7 @@ alias ls="exa --icons"
 alias rm=trash
 
 # tree
-alias tree='tree -a -I "\.git|node_modules|.next|.dist"'
+alias tree='tree -C -a -I "\.git|node_modules|.next|.dist"'
 
 # Programming
 
@@ -104,3 +104,6 @@ export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
 
 # Kubernetes
 alias k="kubectl"
+
+# Java
+. ~/.asdf/plugins/java/set-java-home.zsh

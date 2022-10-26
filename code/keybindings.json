@@ -1,0 +1,16 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+d",
+        "command": "workbench.action.splitEditorRight"
+    },
+    {
+        "key": "shift+cmd+d",
+        "command": "workbench.action.splitEditorDown"
+    },
+    {
+        "key": "alt+s",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    }
+]
