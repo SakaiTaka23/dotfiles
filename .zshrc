@@ -43,6 +43,7 @@ zinit light Aloxaf/fzf-tab
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
+zinit light paulirish/git-open
 
 # fzf
 export FZF_DEFAULT_COMMAND='--files --hidden --glob "!.git"'

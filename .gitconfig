@@ -8,5 +8,6 @@
 [alias]
 	co = checkout
 	dl = ! git branch -d `git branch --merged | grep -v '^*\\|main\\|master'`
+	re = reset --soft HEAD^
 [core]
 	pager = less -F -X

@@ -8,7 +8,8 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
-  "editor.fontFamily": "Ricty Diminished",
+  "editor.fontFamily": "Ricty Diminished with Fira Code",
+  "editor.fontLigatures": true,
   "editor.fontSize": 15,
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
@@ -18,6 +19,7 @@
   "editor.wordWrap": "on",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "files.autoSave": "onFocusChange",
   "files.associations": {
     "*.tpl": "html",
     "**/*.html": "html",
@@ -49,7 +51,6 @@
   "workbench.editorAssociations": {
     "*.ipynb": "vscode.markdown.preview.editor"
   },
-  "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
     "editor.lineHighlightBackground": "#44475a"
@@ -82,6 +83,7 @@
   // Extensions Settings
   // ===================
   "cSpell.userWords": ["gofiber", "gorm", "interactor", "usecase"],
+  "hadolint.cliOptions": ["--ignore=DL3018", "--ignore=DL3008"],
   "errorLens.excludeBySource": ["cSpell"],
   "eslint.run": "onSave",
   "eslint.packageManager": "yarn",
@@ -97,5 +99,6 @@
     "handlers": "Controller"
   },
   "redhat.telemetry.enabled": true,
-  "editor.stickyScroll.enabled": true
+  "editor.stickyScroll.enabled": true,
+  "workbench.colorTheme": "Dracula Pro"
 }
