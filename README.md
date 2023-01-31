@@ -91,10 +91,9 @@ code --list-extensions > extensions
 ```
 
 ## iterm
-- updated automatically
+- will be updated automatically
   - **set Preference -> General -> Preference -> Save changes to Automatically**
 
 ## dotfiles
 
-- all of them are in symbolic links
-
+- all of them are symbolic links

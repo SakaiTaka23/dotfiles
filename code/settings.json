@@ -50,11 +50,18 @@
   },
   "html-css-class-completion.enableEmmetSupport": true,
   "workbench.editorAssociations": {
-    "*.ipynb": "vscode.markdown.preview.editor"
+    "*.ipynb": "vscode.markdown.preview.editor",
+    "*.pdf": "latex-workshop-pdf-hook"
   },
+  "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
-    "editor.lineHighlightBackground": "#44475a"
+    "activityBar.activeBorder": "#ff6bcb",
+    "editorCursor.foreground": "#9a86fd",
+    "editor.lineHighlightBackground": "#44475a",
+    "panelTitle.activeBorder": "#8d92ff",
+    "panel.border": "#8d92ff",
+    "tab.activeBorderTop": "#8d92ff"
   },
   "workbench.colorTheme": "Dracula Pro",
   // ===========================
@@ -83,16 +90,143 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // ===================
+  // LaTeX
+  // ===================
+  "[latex]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+  "latex-workshop.intellisense.package.enabled": true,
+  "latex-workshop.latex.outDir": "",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "ptex2pdf -> pbibtex -> ptex2pdf*2",
+      "tools": [
+        "ptex2pdf",
+        "pbibtex",
+        "ptex2pdf",
+        "ptex2pdf"
+      ]
+    },
+    {
+      "name": "latexmk",
+      "tools": [
+        "latexmk"
+      ]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-interaction=nonstopmode",
+        "-e",
+        "$latex=q/platex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
+        "-e",
+        "$bibtex=q/pbibtex %O %B/",
+        "-e",
+        "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
+        "-e",
+        "$makeindex=q/mendex %O -o %D %S/",
+        "-e",
+        "$dvipdf=q/dvipdfmx %O -o %D %S/",
+        "-norc",
+        "-pdfdvi",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "ptex2pdf",
+      "command": "ptex2pdf",
+      "args": [
+        "-l",
+        "-ot",
+        "-kanji=utf8 -synctex=1",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "pbibtex",
+      "command": "pbibtex",
+      "args": [
+        "-kanji=utf8",
+        "%DOCFILE%"
+      ]
+    }
+  ],
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.view.pdf.external.synctex.args": [
+    "-forward-search",
+    "%TEX%",
+    "%LINE%",
+    "-reuse-instance",
+    "-inverse-search",
+    "code.cmd -r -g \"%f:%l\"",
+    "%PDF%"
+  ],
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.ist",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.snm",
+    "*.nav",
+    "*.dvi",
+    "*.synctex.gz"
+  ],
+  "latex-workshop.latexindent.path": "latexindent",
+  "latex-workshop.latexindent.args": [
+    "%TMPFILE%",
+    "-c=%DIR%/",
+    "-y=defaultIndent: '%INDENT%'"
+  ],
   // ===================
   // Extensions Settings
   // ===================
-  "cSpell.userWords": ["gofiber", "gorm", "interactor", "usecase"],
-  "hadolint.cliOptions": ["--ignore=DL3018", "--ignore=DL3008"],
-  "errorLens.excludeBySource": ["cSpell"],
+  "cSpell.userWords": [
+    "gofiber",
+    "gorm",
+    "interactor",
+    "usecase"
+  ],
+  "hadolint.cliOptions": [
+    "--ignore=DL3018",
+    "--ignore=DL3008"
+  ],
+  "errorLens.excludeBySource": [
+    "cSpell"
+  ],
   "eslint.run": "onSave",
   "eslint.packageManager": "yarn",
   "eslint.format.enable": true,
+  "grammarly.files.include": [
+    "**/*.md",
+    "**/*.txt",
+    "**/*.tex"
+  ],
+  "grammarly.config.documentDomain": "academic",
+  "grammarly.config.documentDialect": "american",
   "path-intellisense.autoSlashAfterDirectory": true,
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true,
@@ -103,5 +237,5 @@
   "material-icon-theme.folders.associations": {
     "handler": "Controller",
     "handlers": "Controller"
-  },
+  }
 }
