@@ -1,4 +1,4 @@
-if [ $(uname) != "Darwin" ] ; then
+if [ "$(uname)" != "Darwin" ]; then
 	echo "Not MacOS!"
 	exit 0
 fi
@@ -20,3 +20,5 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool "true"
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool "true"
 # クラッシュレポートは送らない
 defaults write com.apple.CrashReporter DialogType none
+# ボタンを押し続けた時に連打判定にする
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false

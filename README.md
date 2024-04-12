@@ -23,6 +23,9 @@ sh scripts/init.sh
 ## font RictyDiminished
 https://github.com/edihbrandon/RictyDiminished
 
+## font UDEV Gothic
+https://github.com/yuru7/udev-gothic
+
 ## app store
 - LINE
 - Twitter
@@ -44,16 +47,13 @@ https://github.com/edihbrandon/RictyDiminished
 - tsc
 - tsserver
 
-## MarkText
-- change key bindings
-https://note.com/note_fumi/n/n5c7879340087
-
 ## Keyboard
 - razer macos
-https://github.com/1kc/razer-macos
+  https://github.com/1kc/razer-macos
 
-## Printer
-Cannon IJ Scan Utility Lite
+- realforce
+
+  https://www.realforce.co.jp/support/download/
 
 ## Other
 

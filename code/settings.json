@@ -3,20 +3,25 @@
   // General Settings
   // ================
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   },
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
-  "editor.fontFamily": "Ricty Diminished with Fira Code",
+  // "editor.fontFamily": "Ricty Diminished with Fira Code",
+  "editor.fontFamily": "UDEV Gothic 35LG",
   "editor.fontLigatures": true,
-  "editor.fontSize": 15,
+  "editor.fontSize": 14,
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
   "editor.parameterHints.enabled": false,
   "editor.renderControlCharacters": true,
   "editor.stickyScroll.enabled": true,
   "editor.suggestSelection": "first",
+  "editor.tokenColorCustomizations": {
+    // "comments": "#b3b3b3"
+    "comments": "#9aa9d9"
+  },
   "editor.wordWrap": "on",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -64,6 +69,7 @@
     "tab.activeBorderTop": "#8d92ff"
   },
   "workbench.colorTheme": "Dracula Pro",
+  "yaml.format.singleQuote": false,
   // ===========================
   // Language Specified Settings
   // ===========================
@@ -93,25 +99,16 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  //Python
+  "[python]": {
+    "editor.formatOnType": true
+  },
   // ===================
   // LaTeX
   // ===================
-  "[latex]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "James-Yu.latex-workshop"
-  },
   "latex-workshop.intellisense.package.enabled": true,
   "latex-workshop.latex.outDir": "",
   "latex-workshop.latex.recipes": [
-    {
-      "name": "ptex2pdf -> pbibtex -> ptex2pdf*2",
-      "tools": [
-        "ptex2pdf",
-        "pbibtex",
-        "ptex2pdf",
-        "ptex2pdf"
-      ]
-    },
     {
       "name": "latexmk",
       "tools": [
@@ -138,24 +135,6 @@
         "-norc",
         "-pdfdvi",
         "%DOC%"
-      ]
-    },
-    {
-      "name": "ptex2pdf",
-      "command": "ptex2pdf",
-      "args": [
-        "-l",
-        "-ot",
-        "-kanji=utf8 -synctex=1",
-        "%DOC%"
-      ]
-    },
-    {
-      "name": "pbibtex",
-      "command": "pbibtex",
-      "args": [
-        "-kanji=utf8",
-        "%DOCFILE%"
       ]
     }
   ],
@@ -195,7 +174,6 @@
     "*.dvi",
     "*.synctex.gz"
   ],
-  "latex-workshop.latexindent.path": "latexindent",
   "latex-workshop.latexindent.args": [
     "%TMPFILE%",
     "-c=%DIR%/",
@@ -210,23 +188,28 @@
     "interactor",
     "usecase"
   ],
-  "hadolint.cliOptions": [
-    "--ignore=DL3018",
-    "--ignore=DL3008"
-  ],
   "errorLens.excludeBySource": [
     "cSpell"
   ],
   "eslint.run": "onSave",
-  "eslint.packageManager": "yarn",
   "eslint.format.enable": true,
+  "git.openRepositoryInParentFolders": "always",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "latex": false
+  },
   "grammarly.files.include": [
-    "**/*.md",
-    "**/*.txt",
     "**/*.tex"
   ],
   "grammarly.config.documentDomain": "academic",
   "grammarly.config.documentDialect": "american",
+  "hadolint.cliOptions": [
+    "--ignore=DL3018",
+    "--ignore=DL3008"
+  ],
   "path-intellisense.autoSlashAfterDirectory": true,
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true,
@@ -237,5 +220,8 @@
   "material-icon-theme.folders.associations": {
     "handler": "Controller",
     "handlers": "Controller"
-  }
+  },
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-show-information-expiration": "2024-02-18T07:19:12.696Z"
+  },
 }

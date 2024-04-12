@@ -8,5 +8,5 @@ tools=(
 )
 
 for tool in "${tools[@]}"; do
-  asdf plugin add ${tool}
+  asdf plugin add "${tool}"
 done
