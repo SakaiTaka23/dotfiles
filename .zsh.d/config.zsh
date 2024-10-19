@@ -33,3 +33,6 @@ export PATH="$HOME/.yarn/bin:$PATH"
 
 # OpenSSL
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
+
+# Rust
+. "$HOME/.cargo/env"

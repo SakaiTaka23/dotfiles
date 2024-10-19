@@ -8,8 +8,7 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
-  // "editor.fontFamily": "Ricty Diminished with Fira Code",
-  "editor.fontFamily": "UDEV Gothic 35LG",
+  "editor.fontFamily": "UDEV Gothic 35NFLG",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.inlineSuggest.enabled": true,
@@ -19,7 +18,6 @@
   "editor.stickyScroll.enabled": true,
   "editor.suggestSelection": "first",
   "editor.tokenColorCustomizations": {
-    // "comments": "#b3b3b3"
     "comments": "#9aa9d9"
   },
   "editor.wordWrap": "on",
@@ -39,9 +37,10 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
+  "files.defaultLanguage": "markdown",
   "files.insertFinalNewline": true,
   "terminal.integrated.inheritEnv": false,
-  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontFamily": "UDEV Gothic 35NFLG",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
@@ -54,10 +53,6 @@
     "lang": "ja"
   },
   "html-css-class-completion.enableEmmetSupport": true,
-  "workbench.editorAssociations": {
-    "*.ipynb": "vscode.markdown.preview.editor",
-    "*.pdf": "latex-workshop-pdf-hook"
-  },
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
@@ -104,87 +99,9 @@
     "editor.formatOnType": true
   },
   // ===================
-  // LaTeX
-  // ===================
-  "latex-workshop.intellisense.package.enabled": true,
-  "latex-workshop.latex.outDir": "",
-  "latex-workshop.latex.recipes": [
-    {
-      "name": "latexmk",
-      "tools": [
-        "latexmk"
-      ]
-    }
-  ],
-  "latex-workshop.latex.tools": [
-    {
-      "name": "latexmk",
-      "command": "latexmk",
-      "args": [
-        "-interaction=nonstopmode",
-        "-e",
-        "$latex=q/platex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
-        "-e",
-        "$bibtex=q/pbibtex %O %B/",
-        "-e",
-        "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
-        "-e",
-        "$makeindex=q/mendex %O -o %D %S/",
-        "-e",
-        "$dvipdf=q/dvipdfmx %O -o %D %S/",
-        "-norc",
-        "-pdfdvi",
-        "%DOC%"
-      ]
-    }
-  ],
-  "latex-workshop.view.pdf.viewer": "tab",
-  "latex-workshop.view.pdf.external.synctex.args": [
-    "-forward-search",
-    "%TEX%",
-    "%LINE%",
-    "-reuse-instance",
-    "-inverse-search",
-    "code.cmd -r -g \"%f:%l\"",
-    "%PDF%"
-  ],
-  "latex-workshop.latex.autoClean.run": "onBuilt",
-  "latex-workshop.latex.clean.fileTypes": [
-    "*.aux",
-    "*.bbl",
-    "*.blg",
-    "*.idx",
-    "*.ind",
-    "*.lof",
-    "*.lot",
-    "*.out",
-    "*.toc",
-    "*.acn",
-    "*.acr",
-    "*.alg",
-    "*.glg",
-    "*.glo",
-    "*.gls",
-    "*.ist",
-    "*.fls",
-    "*.log",
-    "*.fdb_latexmk",
-    "*.snm",
-    "*.nav",
-    "*.dvi",
-    "*.synctex.gz"
-  ],
-  "latex-workshop.latexindent.args": [
-    "%TMPFILE%",
-    "-c=%DIR%/",
-    "-y=defaultIndent: '%INDENT%'"
-  ],
-  // ===================
   // Extensions Settings
   // ===================
   "cSpell.userWords": [
-    "gofiber",
-    "gorm",
     "interactor",
     "usecase"
   ],
@@ -193,19 +110,8 @@
   ],
   "eslint.run": "onSave",
   "eslint.format.enable": true,
+  "evenBetterToml.formatter.indentTables": true,
   "git.openRepositoryInParentFolders": "always",
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-    "latex": false
-  },
-  "grammarly.files.include": [
-    "**/*.tex"
-  ],
-  "grammarly.config.documentDomain": "academic",
-  "grammarly.config.documentDialect": "american",
   "hadolint.cliOptions": [
     "--ignore=DL3018",
     "--ignore=DL3008"
@@ -216,12 +122,7 @@
   "prettier.printWidth": 120,
   "plantuml.server": "https://www.plantuml.com/plantuml",
   "plantuml.render": "PlantUMLServer",
-  "redhat.telemetry.enabled": true,
-  "material-icon-theme.folders.associations": {
-    "handler": "Controller",
-    "handlers": "Controller"
-  },
-  "vs-kubernetes": {
-    "vs-kubernetes.minikube-show-information-expiration": "2024-02-18T07:19:12.696Z"
-  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  }
 }

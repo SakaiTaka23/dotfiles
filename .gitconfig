@@ -1,22 +1,16 @@
 [user]
-	name = SakaiTaka23
-	email = tt3.sakai@gmail.com
+name = SakaiTaka23
+email = tt3.sakai@gmail.com
 [ghq]
-	root = /Users/fumi/Downloads
+root = /Users/fumi/Downloads
 [init]
-	defaultBranch = main
+defaultBranch = main
 [alias]
-	co = checkout
-	dl = ! git branch -d `git branch --merged | grep -v '^*\\|main\\|master'`
-	re = reset --soft HEAD^
+co = checkout
+dl = ! git branch -d $(git branch --merged | grep -v '^*\\|main\\|master')
+re = reset --soft HEAD^
 [core]
-	pager = less -F -X
-	excludesfile = /Users/fumi/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+pager = less -F -X
+excludesfile = /Users/fumi/.gitignore_global
 [commit]
-	template = /Users/fumi/.stCommitMsg
+template = /Users/fumi/.stCommitMsg

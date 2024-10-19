@@ -39,6 +39,7 @@ function png2eps() {
     magick convert $1 ${1%.*}.eps
 }
 
+# Fuzzy finder for Makefile targets
 function fmake() {
     if [ ! -e "Makefile" ]; then
         echo "Makefile not found in the current directory."
@@ -61,6 +62,7 @@ function fmake() {
     fi
 }
 
+# Fuzzy finder for npm scripts
 function fyarn() {
     if [ ! -e "package.json" ]; then
         echo "package.json not found in the current directory."

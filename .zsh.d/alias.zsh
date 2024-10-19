@@ -1,6 +1,9 @@
 alias g='cd $(ghq root)/$(ghq list | fzf)'
 alias -g lb='`git branch | fzf --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
 
+# nvim
+alias v='nvim'
+
 # bat
 alias cat="bat --theme="ansi" --style="numbers,changes,header""
 
