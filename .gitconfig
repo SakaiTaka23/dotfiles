@@ -1,16 +1,8 @@
-[user]
-name = SakaiTaka23
-email = tt3.sakai@gmail.com
-[ghq]
-root = /Users/fumi/Downloads
 [init]
 defaultBranch = main
 [alias]
 co = checkout
 dl = ! git branch -d $(git branch --merged | grep -v '^*\\|main\\|master')
 re = reset --soft HEAD^
-[core]
-pager = less -F -X
-excludesfile = /Users/fumi/.gitignore_global
-[commit]
-template = /Users/fumi/.stCommitMsg
+[include]
+path = ~/.gitconfig.local
