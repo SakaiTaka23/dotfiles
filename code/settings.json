@@ -10,7 +10,7 @@
   "editor.formatOnType": true,
   "editor.fontFamily": "UDEV Gothic 35NFLG",
   "editor.fontLigatures": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 16,
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
   "editor.parameterHints.enabled": false,
@@ -53,7 +53,6 @@
     "lang": "ja"
   },
   "html-css-class-completion.enableEmmetSupport": true,
-  "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
     "activityBar.activeBorder": "#ff6bcb",
@@ -96,7 +95,15 @@
   },
   //Python
   "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnType": true
+  },
+  "notebook.defaultFormatter": "ms-python.black-formatter",
+  "notebook.formatOnCellExecution": true,
+  "notebook.formatOnSave.enabled": true,
+  //TypescriptReact
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   // ===================
   // Extensions Settings
@@ -124,5 +131,6 @@
   "plantuml.render": "PlantUMLServer",
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
-  }
+  },
+  "diffEditor.codeLens": true,
 }
