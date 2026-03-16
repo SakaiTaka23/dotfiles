@@ -39,8 +39,10 @@
   },
   "files.defaultLanguage": "markdown",
   "files.insertFinalNewline": true,
+  "terminal.external.osxExec": "Warp.app",
   "terminal.integrated.inheritEnv": false,
-  "terminal.integrated.fontFamily": "UDEV Gothic 35NFLG",
+  "terminal.integrated.fontFamily": "UDEV Gothic NFLG",
+  "terminal.integrated.fontSize": 16,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
@@ -67,20 +69,20 @@
   // ===========================
   // Language Specified Settings
   // ===========================
-  //Go
+  // Go
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
   "go.formatTool": "goimports",
   "go.lintTool": "golangci-lint",
   "go.toolsManagement.autoUpdate": true,
-  //HTML
+  // HTML
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.suggest.insertMode": "replace"
   },
   "html.format.indentInnerHtml": true,
-  //JavaScript
+  // JavaScript
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -93,7 +95,7 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  //Python
+  // Python
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnType": true
@@ -101,9 +103,25 @@
   "notebook.defaultFormatter": "ms-python.black-formatter",
   "notebook.formatOnCellExecution": true,
   "notebook.formatOnSave.enabled": true,
-  //TypescriptReact
+  // TypescriptReact
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  // Docker Compose
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  // GitHub Actions
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   // ===================
   // Extensions Settings
@@ -133,4 +151,5 @@
     "asvetliakov.vscode-neovim": 1
   },
   "diffEditor.codeLens": true,
+  "claudeCode.preferredLocation": "panel"
 }

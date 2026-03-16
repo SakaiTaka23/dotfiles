@@ -4,7 +4,6 @@ tools=(
   kotlin
   nodejs
   python
-  yarn
 )
 
 for tool in "${tools[@]}"; do

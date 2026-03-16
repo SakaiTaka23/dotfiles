@@ -85,6 +85,12 @@ function fyarn() {
     fi
 }
 
+# Fuzzy finder for tmux sessions
+function ts() {
+  session=$(tmux list-sessions -F "#{session_name}" 2>/dev/null | fzf)
+  [ $? -eq 0 ] && [ -n "$session" ] && tmux attach-session -t "$session"
+}
+
 function sort-img-by-date() {
     destination_folder="$(pwd)/renamed"
 

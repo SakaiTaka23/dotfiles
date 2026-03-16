@@ -1,74 +1,47 @@
-# dotfiles
+# DOTFILES
 
-# Setup
+## Setup
 
 ```shell
 sh scripts/init.sh
 ```
 
-## iterm
+## Manual Install
 
-- preference -> preference -> Load preferences from a custom folder or URL
-  - import **com.googlecode.iterm2.plist**
+### Fonts
 
-- theme
-  - https://gist.github.com/Revod/3f3115f8d4b90fc986fd4b61441c2567
-  - https://github.com/Arc0re/Iceberg-iTerm2/blob/master/iceberg.itermcolors
-  - https://github.com/dracula/iterm/blob/master/Dracula.itermcolors
+- RictyDiminished: <https://github.com/edihbrandon/RictyDiminished>
+- UDEV Gothic: <https://github.com/yuru7/udev-gothic>
 
-## Manual install
+### Languages
 
-## font RictyDiminished
-https://github.com/edihbrandon/RictyDiminished
+- Install from asdf
 
-## font UDEV Gothic
-https://github.com/yuru7/udev-gothic
+### Rust
 
-## app store
-- LINE
-- Twitter
+- Install from Rust Official page
 
-## Chrome extensions
-- backup manually
+### Yarn
 
-## Languages
-- install from asdf
-
-## Go
-- air
-- protoc-gen-go, grpc, validate
-- wire
-
-## Yarn
-- nestcli
+- typescript
 - trashcli
-- tsc
-- tsserver
 
-## Keyboard
-- razer macos
-  https://github.com/1kc/razer-macos
+### Keyboard
 
-- realforce
-  https://www.realforce.co.jp/support/download/
+- REALFORCE: <https://www.realforce.co.jp/support/download/>
 
-# update
+### Chrome Extensions
 
-## brew
+- Synced by Arc browser
+
+## Update
+
+### Brew
 
 ```shell
 brew bundle dump
 ```
 
-## code
-```shell
-code --list-extensions > extensions
-```
+### Dotfiles
 
-## iterm
-- will be updated automatically
-  - **set Preference -> General -> Preference -> Save changes to Automatically**
-
-## dotfiles
-
-- all of them are symbolic links
+- All of them are symbolic links so no need to update manually if already managed

@@ -16,6 +16,9 @@ alias rm=trash
 # tree
 alias tree='tree -C -a -I "\.git|node_modules|.next|.dist"'
 
+# just
+alias j='just'
+
 # Docker
 alias ld='lazydocker'
 alias dcu='docker compose up'
