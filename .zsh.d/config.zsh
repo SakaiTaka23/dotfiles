@@ -8,7 +8,6 @@ autoload -Uz compinit && compinit
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # fzf
-export FZF_DEFAULT_COMMAND='--files --hidden --glob "!.git"'
 export FZF_DEFAULT_OPTS='
 --height 60%
 --reverse
@@ -22,17 +21,17 @@ export FZF_DEFAULT_OPTS='
 export GOPATH=$(go env GOPATH)
 export PATH=$PATH:$GOPATH/bin
 
-# intellij
+# JetBrains Toolbox
 export PATH="$HOME/.jetbrains:$PATH"
 
 # Java
 . ~/.asdf/plugins/java/set-java-home.zsh
-
-# npm
-export PATH="$HOME/.yarn/bin:$PATH"
 
 # OpenSSL
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
 
 # Rust
 . "$HOME/.cargo/env"
+
+# zoxide
+eval "$(zoxide init zsh --cmd cd)"

@@ -38,3 +38,6 @@ alias lg='lazygit'
 
 # Kubernetes
 alias k="kubectl"
+
+# zoxide
+alias cdi=__zoxide_zi
