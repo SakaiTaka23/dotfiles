@@ -1,0 +1,9 @@
+[[plugin.deps]]
+use = "Lil-Dank/lazygit"
+rev = "8c4086c"
+hash = "85316b5e9abeae2531d3e5d02a094381"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:dracula"
+rev = "9511cb0"
+hash = "20624fcdfcf7e4e912de05e348065e5e"

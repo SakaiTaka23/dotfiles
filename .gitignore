@@ -1,1 +1,3 @@
 tmux/plugins/tpm
+yazi/*
+!yazi/*.toml
