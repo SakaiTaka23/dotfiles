@@ -4,6 +4,7 @@
 
 ```shell
 sh scripts/init.sh
+sh brew/install.sh
 ```
 
 ## Manual Install
@@ -15,16 +16,15 @@ sh scripts/init.sh
 
 ### Languages
 
-- Install from asdf
+- Install from mise
+  - go
+  - java
+  - node
+  - pnpm
 
 ### Rust
 
 - Install from Rust Official page
-
-### Yarn
-
-- typescript
-- trashcli
 
 ### Keyboard
 

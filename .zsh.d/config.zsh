@@ -4,8 +4,8 @@ setopt hist_ignore_dups
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=250"
 autoload -Uz compinit && compinit
 
-# asdf
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+# mise
+eval "$(mise activate zsh)"
 
 # fzf
 source <(fzf --zsh)
@@ -18,9 +18,6 @@ export FZF_DEFAULT_OPTS='
 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9
 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6
 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4'
-
-# Java
-. ~/.asdf/plugins/java/set-java-home.zsh
 
 # zoxide
 eval "$(zoxide init zsh --cmd cd)"
