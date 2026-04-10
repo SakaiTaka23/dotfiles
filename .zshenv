@@ -5,8 +5,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_STATE_HOME="$HOME/.local/state"
 
 # Go
-export GOPATH=$(go env GOPATH)
-export PATH=$PATH:$GOPATH/bin
+export PATH="$PATH:$HOME/go/bin"
 
 # JetBrains
 export PATH="$HOME/.jetbrains:$PATH"
