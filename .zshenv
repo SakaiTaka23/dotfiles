@@ -15,3 +15,6 @@ export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
 
 # Rust
 . "$HOME/.cargo/env"
+
+# uv
+export PATH="/Users/fumi/.local/share/../bin:$PATH"

@@ -4,6 +4,9 @@ setopt hist_ignore_dups
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=250"
 autoload -Uz compinit && compinit
 
+# Atuin
+eval "$(atuin init zsh)"
+
 # mise
 eval "$(mise activate zsh)"
 

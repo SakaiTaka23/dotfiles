@@ -8,7 +8,7 @@ alias v='nvim'
 alias cat="bat --theme="ansi" --style="numbers,changes,header""
 
 # exa
-alias ls="eza --icons"
+alias ls="eza --icons=auto"
 
 # rm
 alias rm=trash

@@ -6,9 +6,12 @@ fi
 # ファインダーの拡張子表示
 defaults write NSGlobalDomain "AppleShowAllExtensions" -bool "true"
 # バッテリーのパーセンテージ表示
-defaults write com.apple.menuextra.battery ShowPercent -string "YES"
-# タップでクリック判定
+# macOS 26以降はSystem Settings > Control Center > Battery > Show Percentageで設定
+# defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+# タップでクリック判定（内蔵・Bluetooth両方）
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool "true"
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool "true"
+defaults write -g com.apple.mouse.tapBehavior -int 1
 # トラックパッドの方向
 defaults write -g com.apple.swipescrolldirection -bool "false"
 # 文字を勝手に大文字にしない
